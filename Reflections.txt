@@ -1,0 +1,36 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+diff did the work of identifying different lines
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+I can leverage things I've already figured out in the past, saving a lot of repeated work and time. Can also see how I developed as a programmer.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+I can commit at a logical point, making for easier navigation of commit history. The video showed me to make more often commits. 
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Some projects have different files that affect the same change, so it makes sense to commit as a group and saves time with debugging and source control.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Git log lets you see the history of all commits and the commit messages. git diff lets you see the actual changes by file. git diff --stat is even more valuable. You can see the scope of the commits.
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Now that I've used "git checkout" on the asteroids game, it seems delightfully clear how to get around to different versions. So that gives me confidence already. HOWEVER, I am still intimidated by merging. My intention is to feel confident with merging and navigating the crazy-ass file systems of an iOS project. I can do it. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+   I want to use Git for Instrukt1. I will be saving more frequently, and possibly using the unix command shell more. 
+
+	I'll also be doing a sublime tutorial.  
