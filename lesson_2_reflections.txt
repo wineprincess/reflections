@@ -6,7 +6,12 @@ When you initialize a repository, git creates a .git directory in order to track
 
 
 How is the staging area different from the working directory and the repository?
+
+It's like a scratch pad.  you have a chance to get organized and monitor your organization (using git status) prior to actually committing.
+
 What value do you think it offers?
+I think it makes better commit messages and gives you a chance to correct mistakes. Also enables you to intelligently group different files for a single commit.
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
