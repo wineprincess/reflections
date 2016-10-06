@@ -1,28 +1,37 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 
-When you initialize a repository, git creates a .git directory in order to track changes.  There are some files in there, but I'm not sure what they are called. I believe you are then on the master branch, but that there are zero commits and some kind of error message about the head.
-
-
+--When you initialize a repository, git creates a .git directory in order to track changes.  There are some files in there, whose names I can't recall right now. I believe you are then on the master branch, but that there are zero commits and some kind of error message about the head.
 
 How is the staging area different from the working directory and the repository?
 
-It's like a scratch pad.  you have a chance to get organized and monitor your organization (using git status) prior to actually committing.
+--It's like a scratch pad.  you have a chance to get organized and monitor your organization (using git status) prior to actually committing.
 
 What value do you think it offers?
-I think it makes better commit messages and gives you a chance to correct mistakes. Also enables you to intelligently group different files for a single commit.
+--I think it makes better commit messages and gives you a chance to correct mistakes. Also enables you to intelligently group different files for a single commit.
 
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+--the staging process provides a chance to think through what you're committing. You might have made more than one logical change, but you can use the staging area to commit them separately.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+--I think branches with logical commits and logical wordnames should help me take more risks, as well as easily revert back to working versions. Very powerful to be able to switch branches, especially combined with single commits.  I wish I'd known this earlier in my iOS project; I'd have built in a much better safety net with commits & branches than I currently have. It'll be better going forward. Side comment: programming is all about leaving a net for yourself, and untangling the expected snags. Snags are normal, not so much unexpected. There will always be little problems to fix so might as well prepare for them and tackle them without hangups. This seems obvious in retrospect, but as a fairly new dev it didn't really sink in until now.
+
+
 How do the diagrams help you visualize the branch structure?
+
+--You can see the parent, and you can also see unreachable nodes.  Easier to know what features come before and after what you might be merging.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+--The result of merging two branches is a new commit, with each branch as a parent of the new tip. The diagram simply shows this.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+--The pros of automatic merging are saving time and the conservative nature of git's assumptions. Manually merging sounds incredibly time consuming. I suppose one downside of automatic merge is that you may still need to tinker and correct the files by removing the <<< >>> stuff correclty, which for some cases might take longer than if you are working on a small project and have most of the info in your head relating to the merge. 
