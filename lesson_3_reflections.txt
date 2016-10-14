@@ -26,4 +26,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+--Making changes in a separate branch is good if you are collaborating on a new feature that is not ready to be merged into master. Directly making changed in master is probably better for solo projects. Benefits of a separate branch with merged pull requests are documentation among team members. More simply, using a separate branch is good for a feature that isn't ready for master.
